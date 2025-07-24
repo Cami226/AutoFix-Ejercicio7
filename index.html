@@ -10,86 +10,87 @@
   <link rel="stylesheet" href="assets/css/styles.css" />
 
 </head>
+
 <body>
-      <header>
+  <header>
     <h1>AutoFix</h1>
     <p>Reparación de vehículos a domicilio</p>
   </header>
 
- <main class="container my-5">
-        <section id="servicios" class="mb-5">
-            <h2 class="mb-4">Servicios y Precios</h2>
-            <div class="row">
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                      <img src="assets/img/ACEITE.png" class="card-img-top" alt="FIRST">
-                
-                        <div class="card-body">
-                            <h5 class="card-title">Cambio de aceite</h5>
-                            <p class="card-text">Precio: $500 MXN</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                      <img src="assets/img/FRENOS.png" class="card-img-top" alt="SEC">
-                        <div class="card-body">
-                            <h5 class="card-title">Revisión de frenos</h5>
-                            <p class="card-text">Precio: $700 MXN</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                      <img src="assets/img/DIAG.png" class="card-img-top" alt="THRIS">
-                        <div class="card-body">
-                            <h5 class="card-title">Diagnóstico eléctrico</h5>
-                            <p class="card-text">Precio: $600 MXN</p>
-                        </div>
-                    </div>
-                </div>
+  <main class="container my-5">
+    <section id="servicios" class="mb-5">
+      <h2 class="mb-4">Servicios y Precios</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img src="assets/img/ACEITE.png" class="card-img-top" alt="FIRST">
+
+            <div class="card-body">
+              <h5 class="card-title">Cambio de aceite</h5>
+              <p class="card-text">Precio: $500 MXN</p>
             </div>
-        </section>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img src="assets/img/FRENOS.png" class="card-img-top" alt="SEC">
+            <div class="card-body">
+              <h5 class="card-title">Revisión de frenos</h5>
+              <p class="card-text">Precio: $700 MXN</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img src="assets/img/DIAG.png" class="card-img-top" alt="THRIS">
+            <div class="card-body">
+              <h5 class="card-title">Diagnóstico eléctrico</h5>
+              <p class="card-text">Precio: $600 MXN</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <section id="formulario-reparacion">
-    <h2>Solicita tu Reparación</h2>
-    <form id="reparacionForm" >
-      <label for="nombre" class="form-label">Nombre del Cliente</label>
-      <input type="text" placeholder="Nombre" required>
+    <section id="formulario-reparacion">
+      <h2>Solicita tu Reparación</h2>
+      <form id="reparacionForm">
+        <label for="nombre" class="form-label">Nombre del Cliente</label>
+        <input type="text" placeholder="Nombre" required>
 
 
-      <label for="tipo" class="form-label">Tipo de Reparación</label>
-      <select required>
-        <option disabled selected value="">Selecciona un servicio</option>
-        <option value="mecanica">Mecánica</option>
-        <option value="electrica">Eléctrica</option>
-        <option value="diagnostico">Diagnóstico</option>
+        <label for="tipo" class="form-label">Tipo de Reparación</label>
+        <select required>
+          <option disabled selected value="">Selecciona un servicio</option>
+          <option value="mecanica">Mecánica</option>
+          <option value="electrica">Eléctrica</option>
+          <option value="diagnostico">Diagnóstico</option>
 
-      </select>
+        </select>
 
         <label for="descripcion" class="form-label">Descripción</label>
-      <textarea placeholder="Describa el problema" required></textarea>
+        <textarea placeholder="Describa el problema" required></textarea>
 
- 
 
-    <h5>Programa tu Cita</h5>
-      <input type="date" required>
-      <input type="time" required>
-    
- 
-    <h2>Información de Pago</h2>
-      <input type="text" placeholder="Número de Tarjeta" required>
-      <input type="text" placeholder="Nombre del Titular" required>
-      <input type="password" placeholder="CVV" maxlength="4" required>
-          <button type="submit">CONFIRMAR SOLICITUD</button>
 
-    </form>
-  </section>
-  
+        <h5>Programa tu Cita</h5>
+        <input type="date" required>
+        <input type="time" required>
 
-  <footer>
-    <p>© 2025 AutoFix. Todos los derechos reservados.</p>
-  </footer>
+
+        <h2>Información de Pago</h2>
+        <input type="text" placeholder="Número de Tarjeta" required>
+        <input type="text" placeholder="Nombre del Titular" required>
+        <input type="password" placeholder="CVV" maxlength="4" required>
+        <button type="submit">CONFIRMAR SOLICITUD</button>
+
+      </form>
+    </section>
+
+
+    <footer>
+      <p>© 2025 AutoFix. Todos los derechos reservados.</p>
+    </footer>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
