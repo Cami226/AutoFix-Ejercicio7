@@ -53,34 +53,39 @@
 
   <section id="formulario-reparacion">
     <h2>Solicita tu Reparación</h2>
-    <form id="reparacionForm">
-      <input type="text" placeholder="Nombre del Cliente" required>
+    <form id="reparacionForm" >
+      <label for="nombre" class="form-label">Nombre del Cliente</label>
+      <input type="text" placeholder="Nombre" required>
+
+
+      <label for="tipo" class="form-label">Tipo de Reparación</label>
       <select required>
-        <option disabled selected>Tipo de Reparación</option>
+        <option disabled selected value="">Selecciona un servicio</option>
         <option value="mecanica">Mecánica</option>
         <option value="electrica">Eléctrica</option>
         <option value="diagnostico">Diagnóstico</option>
-      </select>
-      <textarea placeholder="Descripción del problema" required></textarea>
 
-    </form>
+      </select>
+
+        <label for="descripcion" class="form-label">Descripción</label>
+      <textarea placeholder="Describa el problema" required></textarea>
+
  
 
-    <h2>Programa tu Cita</h2>
-    <form id="citaForm">
+    <h5>Programa tu Cita</h5>
       <input type="date" required>
       <input type="time" required>
     
-    </form>
  
-    <h2>Pago en Línea</h2>
-    <form id="pagoForm">
+    <h2>Información de Pago</h2>
       <input type="text" placeholder="Número de Tarjeta" required>
       <input type="text" placeholder="Nombre del Titular" required>
       <input type="password" placeholder="CVV" maxlength="4" required>
-      <button type="submit">CONFIRMAR SOLICITUD</button>
+          <button type="submit">CONFIRMAR SOLICITUD</button>
+
     </form>
   </section>
+  
 
   <footer>
     <p>© 2025 AutoFix. Todos los derechos reservados.</p>
